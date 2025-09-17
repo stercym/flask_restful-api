@@ -46,8 +46,7 @@ class Trainers(Resource):
         new_trainer = Trainer(name=trainer_data['name'], bio=trainer_data['bio'], specialization = trainer_data['specialization'], phone_number=trainer_data['phone_number'])
         db.session.add(new_trainer)
         db.session.commit()
-        resp = make_response({'success':'Trainer Created'}, 201)
-        return resp
+        return jsonify({"message": "Trainer created successfully"}), 201
 
 
 
