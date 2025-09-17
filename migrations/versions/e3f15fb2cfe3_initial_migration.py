@@ -1,8 +1,8 @@
-"""create trainers, trainees and sessions table
+"""initial migration
 
-Revision ID: 73ecbaaca1e4
+Revision ID: e3f15fb2cfe3
 Revises: 
-Create Date: 2025-09-12 10:13:04.501026
+Create Date: 2025-09-14 14:28:36.794806
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '73ecbaaca1e4'
+revision = 'e3f15fb2cfe3'
 down_revision = None
 branch_labels = None
 depends_on = None
